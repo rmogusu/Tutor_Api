@@ -16,8 +16,10 @@ public class Sql2oTutorDaoTest {
     private static  Sql2oTutorDao tutorDao;
     @BeforeClass
     public static void setUp() throws Exception {
-        String connectionString = "jdbc:postgresql://localhost:5432/tutor_test_database";
-        Sql2o sql2o = new Sql2o(connectionString, "rose", "wambua");
+        //String connectionString = "jdbc:postgresql://localhost:5432/tutor_test_database";
+        //Sql2o sql2o = new Sql2o(connectionString, "rose", "wambua");
+        String connectionString = "jdbc:postgresql://ec2-54-165-164-38.compute-1.amazonaws.com:5432/d6nkknsjuaobco"; //!
+        Sql2o sql2o = new Sql2o(connectionString, "vngfleozjkmdbn", "2bbba2d9d8bf0165b1f84c0ad8bc20b0668db2b8bf04a5ec41e7ebe6c4c8b37a"); //!
         System.out.println("Connection Initialized");
         tutorDao = new Sql2oTutorDao(sql2o);
         conn = sql2o.open();
