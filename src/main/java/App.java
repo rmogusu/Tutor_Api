@@ -29,12 +29,10 @@ public class App {
         Gson gson = new Gson();
 
 
-       String connectionString = "jdbc:postgresql://localhost:5432/tutor_database";
-       Sql2o sql2o = new Sql2o(connectionString, "rose", "wambua");
-
-        //String connectionString = "jdbc:postgresql://ec2-34-200-72-77.compute-1.amazonaws.com:5432/d76hbp26t1gp7g";
-        //Sql2o sql2o = new Sql2o(connectionString, "xheugcjqyscryb", "9d62b7aa1616cdf49154abc03f568434554ea902e33f44a26924dedfc5c0eae2");
-
+       //String connectionString = "jdbc:postgresql://localhost:5432/tutor_database";
+       //Sql2o sql2o = new Sql2o(connectionString, "rose", "wambua");
+        String connectionString = "jdbc:postgresql://ec2-3-228-114-251.compute-1.amazonaws.com:5432/dda5pcu9eas7qh"; //!
+        Sql2o sql2o = new Sql2o(connectionString, "dmnjablysngrua", "59aae163f799502ab0b90c954134ae4305fdd092f0c90ad27d950f4fb790d712"); //!
 
         tutorDao = new Sql2oTutorDao(sql2o);
         conn = sql2o.open();
