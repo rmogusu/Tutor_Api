@@ -12,7 +12,17 @@ import java.util.Map;
 import static spark.Spark.*;
 
 public class App {
+    static int getHerokuAssignedPort() {
+    ProcessBuilder processBuilder = new ProcessBuilder();
+    if (processBuilder.environment().get("PORT") != null) {
+        return Integer.parseInt(processBuilder.environment().get("PORT"));
+    }
+    return 4567;
+}
+
     public static void main(String[] args) {
+        port(getHerokuAssignedPort());
+
         staticFileLocation("/public");
         Sql2oTutorDao tutorDao;
         Connection conn;
@@ -31,7 +41,17 @@ public class App {
 
 
 //        tutor
-
+        get("/","application/json",(request, response) ->
+        {
+            System.out.println(tutorDao.getAll());
+            if (tutorDao.getAll().size()>0)
+            {
+                return gson.toJson(tutorDao.getAll());
+            }else
+            {
+                throw new ApiException(404,String.format("No Tutors in database"));
+            }
+        });
         post("/tutors/new", "application/json", (req, res) -> {
             Tutor tutor = gson.fromJson(req.body(), Tutor.class);
             tutorDao.saveTutor(tutor);
