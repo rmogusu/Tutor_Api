@@ -22,8 +22,8 @@ public class App {
 
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
-
         staticFileLocation("/public");
+
         Sql2oTutorDao tutorDao;
         Connection conn;
         Gson gson = new Gson();
@@ -31,9 +31,8 @@ public class App {
 
        //String connectionString = "jdbc:postgresql://localhost:5432/tutor_database";
        //Sql2o sql2o = new Sql2o(connectionString, "rose", "wambua");
-        String connectionString = "jdbc:postgresql://ec2-3-228-114-251.compute-1.amazonaws.com:5432/dda5pcu9eas7qh"; //!
-        Sql2o sql2o = new Sql2o(connectionString, "dmnjablysngrua", "59aae163f799502ab0b90c954134ae4305fdd092f0c90ad27d950f4fb790d712"); //!
-
+        String connectionString = "jdbc:postgresql://@ec2-3-224-97-209.compute-1.amazonaws.com:5432/dflot1usec0jea"; //!
+        Sql2o sql2o = new Sql2o(connectionString, "clspsryyyvediz", "5387ed687b2231864ae6ea025770221a638d97ccc9477218184e8254f7ded2ba"); //!
         tutorDao = new Sql2oTutorDao(sql2o);
         conn = sql2o.open();
 
