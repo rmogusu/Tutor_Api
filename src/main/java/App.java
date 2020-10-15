@@ -31,7 +31,7 @@ public class App {
 
        //String connectionString = "jdbc:postgresql://localhost:5432/tutor_database";
        //Sql2o sql2o = new Sql2o(connectionString, "rose", "wambua");
-        String connectionString = "jdbc:postgresql://@ec2-3-233-236-188.compute-1.amazonaws.com:5432/deofv5jh86quk3"; //!
+        String connectionString = "jdbc:postgresql://ec2-3-233-236-188.compute-1.amazonaws.com:5432/deofv5jh86quk3"; //!
         Sql2o sql2o = new Sql2o(connectionString, "mxnmjuyosdxgpr", "f1a6aef4a3b37ddd892af7a0e459dab59586bc49f5999ff3b43a9ffd4675bdea"); //!
 
         tutorDao = new Sql2oTutorDao(sql2o);

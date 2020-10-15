@@ -6,8 +6,8 @@ The following files have been resolved:
    org.eclipse.jetty.websocket:websocket-servlet:jar:9.4.8.v20171121:compile
    org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:compile
    javax.servlet:javax.servlet-api:jar:3.1.0:compile
+   org.postgresql:postgresql:jar:42.2.17:compile
    org.eclipse.jetty:jetty-server:jar:9.4.8.v20171121:compile
-   org.postgresql:postgresql:jar:42.2.2:compile
    org.slf4j:slf4j-api:jar:1.7.13:compile
    org.eclipse.jetty:jetty-webapp:jar:9.4.8.v20171121:compile
    org.eclipse.jetty:jetty-client:jar:9.4.8.v20171121:compile
@@ -17,6 +17,7 @@ The following files have been resolved:
    org.eclipse.jetty:jetty-servlet:jar:9.4.8.v20171121:compile
    org.sql2o:sql2o:jar:1.5.4:compile
    org.eclipse.jetty.websocket:websocket-client:jar:9.4.8.v20171121:compile
+   org.checkerframework:checker-qual:jar:3.5.0:runtime
    com.google.code.gson:gson:jar:2.5:compile
    org.json:json:jar:20090211:compile
    org.eclipse.jetty:jetty-http:jar:9.4.8.v20171121:compile

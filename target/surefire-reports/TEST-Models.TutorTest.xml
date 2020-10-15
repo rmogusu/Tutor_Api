@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Models.TutorTest" time="0.085" tests="15" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Models.TutorTest" time="0.073" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.7+10"/>
@@ -65,15 +65,15 @@
   <testcase name="NewTutorObjectGetsCorrectlyCreated_true" classname="Models.TutorTest" time="0"/>
   <testcase name="Tutor_SetsExperienceCorrectly_true" classname="Models.TutorTest" time="0"/>
   <testcase name="Tutor_InstantiatesWithExperience_true" classname="Models.TutorTest" time="0"/>
-  <testcase name="Tutor_SetsRatingCorrectly_true" classname="Models.TutorTest" time="0.001"/>
+  <testcase name="Tutor_SetsRatingCorrectly_true" classname="Models.TutorTest" time="0"/>
   <testcase name="Tutor_InstantiatesWithImageUrl_true" classname="Models.TutorTest" time="0"/>
-  <testcase name="Tutor_SetsSubjetCorrectly_true" classname="Models.TutorTest" time="0.001"/>
+  <testcase name="Tutor_SetsSubjetCorrectly_true" classname="Models.TutorTest" time="0.007"/>
   <testcase name="Tutor_SetsNameCorrectly_true" classname="Models.TutorTest" time="0"/>
   <testcase name="Tutor_SetsBioCorrectly_true" classname="Models.TutorTest" time="0"/>
-  <testcase name="Tutor_InstantiatesWithName_true" classname="Models.TutorTest" time="0.001"/>
+  <testcase name="Tutor_InstantiatesWithName_true" classname="Models.TutorTest" time="0"/>
   <testcase name="Tutor_InstantiatesWithSubjet_true" classname="Models.TutorTest" time="0"/>
-  <testcase name="Tutor_SetsPhoneCorrectly_true" classname="Models.TutorTest" time="0.001"/>
+  <testcase name="Tutor_SetsPhoneCorrectly_true" classname="Models.TutorTest" time="0"/>
   <testcase name="Tutor_SetsImageUrlCorrectly_true" classname="Models.TutorTest" time="0"/>
-  <testcase name="Tutor_InstantiatesWithBio_true" classname="Models.TutorTest" time="0.001"/>
+  <testcase name="Tutor_InstantiatesWithBio_true" classname="Models.TutorTest" time="0"/>
   <testcase name="Tutor_InstantiatesWithRating_true" classname="Models.TutorTest" time="0"/>
 </testsuite>
