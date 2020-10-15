@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -6,7 +7,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>Tutor_Api</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
 
     <dependencies>
         <!-- We need to list out ALL dependencies our project needs. If you have dependencies not listed here, but sure to add them -->
@@ -23,7 +24,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.2</version>
+            <version>42.2.17</version>
         </dependency>
         <dependency>
             <groupId>org.sql2o</groupId>
@@ -97,7 +98,7 @@
                     <!-- Change this to YOUR application name! -->
                     <appName>tutors-api</appName>
                     <processTypes>
-                        <web>java -jar target/Tutor_Api-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/Tutor_Api-1.0-SNAPSHOT-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>

@@ -20,6 +20,6 @@ dependencies {
     compile 'org.slf4j:slf4j-simple:1.7.21'
     compile 'com.google.code.gson:gson:2.5'
     compile group: 'org.postgresql', name: 'postgresql', version: '‎9.4-1200-jdbc41'
-    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.2'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.17'
 
 }
