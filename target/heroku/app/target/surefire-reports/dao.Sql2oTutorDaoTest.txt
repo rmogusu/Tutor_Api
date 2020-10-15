@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: dao.Sql2oTutorDaoTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.24 sec <<< FAILURE! - in dao.Sql2oTutorDaoTest
-dao.Sql2oTutorDaoTest  Time elapsed: 0.24 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - The connection attempt failed.
-	at dao.Sql2oTutorDaoTest.setUp(Sql2oTutorDaoTest.java:25)
-Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
-	at dao.Sql2oTutorDaoTest.setUp(Sql2oTutorDaoTest.java:25)
-Caused by: java.net.UnknownHostException: @ec2-54-243-67-199.compute-1.amazonaws.com
-	at dao.Sql2oTutorDaoTest.setUp(Sql2oTutorDaoTest.java:25)
-
-dao.Sql2oTutorDaoTest  Time elapsed: 0.24 sec  <<< ERROR!
-java.lang.NullPointerException
-	at dao.Sql2oTutorDaoTest.shutDown(Sql2oTutorDaoTest.java:38)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 136.748 sec - in dao.Sql2oTutorDaoTest

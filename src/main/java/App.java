@@ -39,17 +39,17 @@ public class App {
 
 
 //        tutor
-        get("/","application/json",(request, response) ->
-        {
-            System.out.println(tutorDao.getAll());
-            if (tutorDao.getAll().size()>0)
-            {
-                return gson.toJson(tutorDao.getAll());
-            }else
-            {
-                throw new ApiException(404,String.format("No Tutors in database"));
-            }
-        });
+//        get("/","application/json",(request, response) ->
+//        {
+//            System.out.println(tutorDao.getAll());
+//            if (tutorDao.getAll().size()>0)
+//            {
+//                return gson.toJson(tutorDao.getAll());
+//            }else
+//            {
+//                throw new ApiException(404,String.format("No Tutors in database"));
+//            }
+//        });
         post("/tutors/new", "application/json", (req, res) -> {
             Tutor tutor = gson.fromJson(req.body(), Tutor.class);
             tutorDao.saveTutor(tutor);
